@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll("nav ul li a");
     const sections = document.querySelectorAll("section");
 
-    // Smooth scrolling
     navLinks.forEach(link => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Intersection Observer for section reveal animations
     const options = {
         root: null,
         threshold: 0.1,
